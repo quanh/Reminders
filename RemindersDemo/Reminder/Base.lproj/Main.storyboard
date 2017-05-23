@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gMn-WC-Kas">
+                                <rect key="frame" x="71.5" y="608" width="45" height="39"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <state key="normal" title="Rect"/>
+                                <connections>
+                                    <action selector="addRectReminder:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fUu-69-8wd"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TfB-ZK-G91">
+                                <rect key="frame" x="252.5" y="608" width="58" height="39"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <state key="normal" title="Poper"/>
+                                <connections>
+                                    <action selector="poperReminder:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Sb3-dz-IG1"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HjN-Ug-foW">
+                                <rect key="frame" x="165" y="90" width="90" height="73"/>
+                                <color key="backgroundColor" red="0.83804887530000005" green="0.94915407900000004" blue="0.99304944279999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="73" id="2RZ-9h-dcR"/>
+                                    <constraint firstAttribute="width" constant="90" id="bpI-YV-oFS"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mhi-fP-c9r">
+                                <rect key="frame" x="161" y="608" width="52" height="39"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <state key="normal" title="Clear"/>
+                                <connections>
+                                    <action selector="clearAllReminders:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ppk-pL-2ak"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="gMn-WC-Kas" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" multiplier="0.5" id="3bf-an-4lg"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="gMn-WC-Kas" secondAttribute="bottom" constant="20" id="AZ7-8J-kEx"/>
+                            <constraint firstItem="HjN-Ug-foW" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="70" id="OGE-jS-3c7"/>
+                            <constraint firstAttribute="trailing" secondItem="HjN-Ug-foW" secondAttribute="trailing" constant="120" id="XzQ-5L-3Kf"/>
+                            <constraint firstItem="TfB-ZK-G91" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" multiplier="1.5" id="gcs-VG-BUr"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="TfB-ZK-G91" secondAttribute="bottom" constant="20" id="hLg-Zt-N1F"/>
+                            <constraint firstItem="mhi-fP-c9r" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="pWI-tl-UIb"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="mhi-fP-c9r" secondAttribute="bottom" constant="20" id="vO5-TV-VCM"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="toggleView" destination="HjN-Ug-foW" id="WEs-pG-9kD"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="117.59999999999999" y="123.68815592203899"/>
+        </scene>
+    </scenes>
+</document>
