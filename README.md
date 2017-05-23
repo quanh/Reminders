@@ -1,2 +1,2 @@
 # Reminders
-A extentsion of view,reminders for view , inner or out of view
+An extention of view,reminders for view , inner or out of view
